@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      type="module"
+      src="https://public.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js"
+    ></script>
+    <script
+      src = "./app.js" defer></script>
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css" integrity="sha512-EZLkOqwILORob+p0BXZc+Vm3RgJBOe1Iq/0fiI7r/wJgzOFZMlsqTa29UEl6v6U6gsV4uIpsNZoV32YZqrCRCQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
+   <link rel="stylesheet" href="style.css">
+    <title>Archies Flippin Webby</title>
+    
+  </head>
+  <body>
+    
+    <div class="maincontent">
+        <h1>My first Website</h1>
+        <fieldset id="first_row_of_buttons">
+<legend>Filter this view!</legend>
+<input type="button" value="Oregan & Washington Only" id="oregan_and_Washington">
+<input type="button" value="Clear_Filter" id="Clear_Filter">
+<input type="button" value="Undo" id="Undo">
+
+        </fieldset>
+      <Tableau-viz
+        id="ourViz"
+        src="https://public.tableau.com/views/Superstore_embedded_800x800/Overview"
+        toolbar="Bottom"
+        height="100vh"
+        width="100vw"
+      ></Tableau-viz>
+    </div>
+
+  </body>
+</html>
